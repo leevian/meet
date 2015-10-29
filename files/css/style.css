@@ -34,7 +34,7 @@ body > #wrap {height: auto; min-height: 100%;}
 /*header css*/
 #header {
 	background-color: #3b5674;
-	height: 134px;
+	height: 117px;
 }
 #header .logo{
 	float: left;
@@ -47,9 +47,15 @@ body > #wrap {height: auto; min-height: 100%;}
 #header .list-box{
 	float: left;
 	padding-top: 45px;
+	height: 72px;
+}
+#header .list-box ul{
+	overflow: hidden;
 }
 #header .list-box li {
 	float: left;
+	position: relative;
+	height: 100%;
 	margin-right: 39px;
 }
 #header .list-box li a{
@@ -58,10 +64,10 @@ body > #wrap {height: auto; min-height: 100%;}
 	background:url(../images/icons.png) no-repeat;
 }
 #header .list-box li a.icon-home{
-	background-position: 1px 0;
+	background-position: 6px 0;
 }
 #header .list-box li a.icon-home.active,#header .list-box li a.icon-home:hover{
-	background-position: 1px -62px;
+	background-position: 6px -62px;
 }
 #header .list-box li a.icon-message{
 	background-position: -47px 0;
@@ -108,7 +114,11 @@ body > #wrap {height: auto; min-height: 100%;}
 	border-radius: 15px;
 
 }
-
+#header .tri-icon{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
 
 /*home-page css*/
 
@@ -122,9 +132,16 @@ body > #wrap {height: auto; min-height: 100%;}
 	border-radius: 5px;
 	padding: 20px;
 }
-#home-page .info-box{
+#home-page .con{
+	display: none;
 	float: left;
+	width: 711px;
+	overflow: hidden;
 }
+#home-page .con-1 {
+	display: block;
+}
+
 #home-page .info-box .face-box{
 	float: left;
 }
@@ -181,6 +198,12 @@ body > #wrap {height: auto; min-height: 100%;}
 	background-position: -342px -139px;
 
 }
+#home-page .trends-box .bottom{
+	overflow: hidden;
+}
+#home-page .trends-box .dynamic-box{
+	margin-bottom: 20px;
+}
 #home-page .trends-box .dynamic-box p{
 	color: #444;
 	padding-left: 30px;
@@ -197,6 +220,192 @@ body > #wrap {height: auto; min-height: 100%;}
 #home-page .trends-box .dynamic-box p span {
 	float: right;
 }
+#home-page .trends-box .dynamic-box .controller-box {
+	float: right;
+	padding: 20px 20px 0 0 ;
+}
+#home-page .trends-box .dynamic-box .controller-box a{
+	display: block;
+	float: left;
+	overflow: hidden;
+	height: 35px;
+	width: 35px;
+	background: url('../images/icons.png');
+	text-indent: 10000px;
+
+}
+#home-page .trends-box .dynamic-box .controller-box a.remark{
+	background-position: 0 -235px;
+	transition: 1s;
+	-moz-transition: 1s;	/* Firefox 4 */
+	-webkit-transition: 1s;	/* Safari 和 Chrome */
+	-o-transition: 1s;	
+	margin-right: 10px;
+}
+#home-page .trends-box .dynamic-box .controller-box a.remark:hover{
+	-ms-transform:rotate(360deg); /* IE 9 */
+	-moz-transform:rotate(360deg); /* Firefox */
+	-webkit-transform:rotate(360deg); /* Safari and Chrome */
+	-o-transform:rotate(360deg); /* Opera */
+	transform:rotate(360deg);
+}
+#home-page .trends-box .dynamic-box .controller-box a.like{
+	background-position: -69px -235px;
+	width: 40px;
+}
+#home-page .trends-box .dynamic-box .controller-box a.like:hover{
+	background-position: -125px -235px;
+
+}
+#home-page .trends-box .image-box .img-box {
+	padding-left: 40px;
+	padding-top: 5px;
+
+}
+#home-page .trends-box .image-box .img-box img{
+	width: 480px;
+
+}
+
+#home-page .trends-box .remark-box {
+	padding: 0 20px;
+	display: none;
+}
+#home-page .trends-box .remark-box .remark-info{
+	padding-bottom: 10px;
+}
+#home-page .trends-box .remark-box .remark-input{
+	overflow: hidden;
+}
+#home-page .trends-box .remark-box form{
+	padding-bottom: 20px;
+}
+#home-page .trends-box .remark-box form input{
+	width: 98%;
+	height: 30px;
+	margin-left: 10px;
+}
+#home-page .trends-box .remark-box form button{
+	float: right;
+}
+#home-page .trends-box .remark-box p{
+	margin: 0;
+	width: 500px;
+}
+#home-page .trends-box .remark-box p a.replay{
+	float: right;
+}
+#home-page .trends-box .remark-box .small-face {
+	float: left;
+	padding-right: 10px;
+}
+#home-page .trends-box .remark-box .small-face img{
+	width: 40px;
+	height: 40px;
+}
+#home-page .trends-box .remark-box ul.remark-list{
+	margin:0;
+}
+#home-page .trends-box .remark-box ul.remark-list li{
+	margin-bottom: 10px;
+	border-bottom: 1px solid #ddd;
+}
+#home-page p.time{
+	float: left;
+	padding-top: 25px;
+	margin-bottom: 30px;
+}
+#home-page .sider {
+	color: #fff;
+	width: 250px;
+	padding-left: 20px;
+}
+#home-page .sider .sec .sec-top{
+	border-bottom: 2px solid #fff;
+}
+#home-page .sider .sec .sec-top h5{
+	margin: 0;
+	padding-bottom: 4px;
+
+}
+#home-page .sider .sec .sec-top p {
+	color: #6b7d91;
+	margin: 0 0 3px 0;
+	font-size: 14px;
+
+}
+#home-page .sider .sec .sec-bottom ul {
+	margin: 0;
+
+}
+#home-page .sider .sec .sec-bottom ul a {
+	color: #fff;
+	display: block;
+	background: url(../images/remark.png) no-repeat;
+	background-position: 6px 8px;
+
+	background-size: 7%;
+	padding: 7px 0 7px 31px;
+	border-bottom: 1px solid #6b7d91;
+}
+#home-page .sider .sec .sec-bottom ul a.fans {
+	background-image: url('../images/fans.png');
+	border-bottom: 0 none;
+}
+#home-page .sider .sec .sec-bottom ul a.liked-icon {
+	background-image: url('../images/like.png');
+	background-position: 6px 10px;
+}
+#home-page .sider .sec .sec-bottom ul a.say-icon {
+	background-image: url('../images/text.png');
+	background-position: 6px 10px;
+}
+#home-page .sider .sec .sec-bottom ul a.photos-icon {
+	background-image: url('../images/photo.png');
+	background-position: 6px 10px;
+}
+#home-page .sider .sec .sec-bottom ul a.diary-icon {
+	background-image: url('../images/diary.png');
+	background-position: 6px 10px;
+}
+#home-page .sider .sec .sec-bottom ul a.enjoy-icon {
+	background-image: url('../images/enjoy.png');
+	border-bottom: 0 none;
+	background-position: 6px 10px;
+}
+#home-page .sider .sec .sec-bottom ul a.remarked-icon {
+	background-image: url('../images/remarked.png');
+	border-bottom: 0 none;
+	background-position: 6px 11px;
+}
+#home-page .sider .sec .sec-bottom a span{
+	float: right;
+	padding-right: 10px;
+}
+#home-page .sider .sec .sec-bottom a:hover{ 
+	text-decoration: none;
+}
+#home-page .sider .sec-2{
+	padding-top: 49px;
+	padding-bottom:30px;
+}
+#home-page .sider .sec-3{
+	padding-bottom: 30px;
+}
+
+
+
+#home-page .text-pop{
+	
+}
+
+
+
+
+
+
+
+
 
 /*login-page css */
 
